@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Practica9" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="Raiz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ld-Fc-T7Q" userLabel="CONTENEDOR  TEMPERATURA">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="448"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bodega XYZ123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hv9-3Z-DHC" userLabel="ETIQUETA NOMBRE BODEGA">
+                                        <rect key="frame" x="118" y="39" width="178" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="warehouse" translatesAutoresizingMaskIntoConstraints="NO" id="SAF-r6-mee">
+                                        <rect key="frame" x="32" y="101" width="350" height="315"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.74982712220000003" green="0.71022256620000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="hv9-3Z-DHC" firstAttribute="centerX" secondItem="3ld-Fc-T7Q" secondAttribute="centerX" id="1VE-zE-uiz"/>
+                                    <constraint firstAttribute="trailing" secondItem="SAF-r6-mee" secondAttribute="trailing" constant="32" id="3EB-gK-1PF"/>
+                                    <constraint firstAttribute="bottom" secondItem="SAF-r6-mee" secondAttribute="bottom" constant="32" id="5fb-vw-ebG"/>
+                                    <constraint firstItem="SAF-r6-mee" firstAttribute="leading" secondItem="3ld-Fc-T7Q" secondAttribute="leading" constant="32" id="RwO-Ng-zRa"/>
+                                    <constraint firstItem="SAF-r6-mee" firstAttribute="top" secondItem="hv9-3Z-DHC" secondAttribute="bottom" constant="32" id="mdu-I8-w9D"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oJi-vE-2vG" userLabel="CONTENEDOR BODEGA">
+                                <rect key="frame" x="0.0" y="448" width="414" height="448"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24°C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVc-I8-AXJ">
+                                        <rect key="frame" x="75" y="152" width="265" height="144"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="120"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="descarga" translatesAutoresizingMaskIntoConstraints="NO" id="98o-Vw-u9S">
+                                        <rect key="frame" x="269" y="8" width="128" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="128" id="Rkc-2H-gRN"/>
+                                            <constraint firstAttribute="height" constant="128" id="csA-1u-RKk"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.62315558989999997" blue="0.98507569179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="sVc-I8-AXJ" firstAttribute="leading" secondItem="oJi-vE-2vG" secondAttribute="leading" constant="75" id="8A2-f2-Otm"/>
+                                    <constraint firstAttribute="trailing" secondItem="sVc-I8-AXJ" secondAttribute="trailing" constant="74" id="Ej9-H2-RKB"/>
+                                    <constraint firstItem="98o-Vw-u9S" firstAttribute="top" secondItem="oJi-vE-2vG" secondAttribute="top" constant="8" id="Tgf-5i-zM3"/>
+                                    <constraint firstAttribute="trailing" secondItem="98o-Vw-u9S" secondAttribute="trailing" constant="17" id="aVM-QM-HSU"/>
+                                    <constraint firstAttribute="bottom" secondItem="sVc-I8-AXJ" secondAttribute="bottom" constant="152" id="fxq-T7-Kxz"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3ld-Fc-T7Q" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="3bX-fV-FgZ"/>
+                            <constraint firstItem="oJi-vE-2vG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="89i-Lr-dWn"/>
+                            <constraint firstAttribute="bottom" secondItem="oJi-vE-2vG" secondAttribute="bottom" id="Oad-a1-utr"/>
+                            <constraint firstItem="3ld-Fc-T7Q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UCl-03-DRh"/>
+                            <constraint firstItem="hv9-3Z-DHC" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="ZfB-c4-nmb"/>
+                            <constraint firstItem="oJi-vE-2vG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="kut-Xq-ZyR"/>
+                            <constraint firstItem="3ld-Fc-T7Q" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="uJ0-Jn-t1w"/>
+                            <constraint firstItem="3ld-Fc-T7Q" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="wdO-cf-Uwy"/>
+                            <constraint firstItem="oJi-vE-2vG" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="zRn-z2-URP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="descarga" width="225" height="225"/>
+        <image name="warehouse" width="512" height="512"/>
+    </resources>
+</document>
